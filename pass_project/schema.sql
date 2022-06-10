@@ -1,0 +1,9 @@
+-- DROP TABLE IF EXISTS stoke_users;
+
+CREATE TABLE stoke_users (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    email TEXT NOT NULL,
+    passcode VARCHAR NOT NULL,
+    passCost INT,
+    joined_on TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+);

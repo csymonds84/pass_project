@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block title %} Sign up {% endblock %}
+
+{% block content %}
+
+  <h1>Sign up here to track your savings</h1>
+  <form method="post">
+    <label for="fName">First name</label>
+    </br>
+    <input type="text" name="fName" id="fname"
+            placeholder="Minimum 2 letters">
+    </br>
+
+    <label for="lName">Last name</label>
+    </br>
+    <input type="text" name="lName" id="lName"
+            placeholder="Minimum 2 letters">
+    </br>
+
+    <label for="email">Email address</label>
+    </br>
+    <input type="email" name="email" id="email"
+            placeholder="SBtheEast@gmail.com">
+    </br>
+
+    <label for="passCost">Enter the cost of your pass</label>
+    </br>
+    <input type="number" name="passCost" id="passCost"
+          placeholder="750">
+    </br>
+
+    <p>Do you support Ski The East or Backcountry.com ?</p>
+    <input type="radio" id="yes" name="support_choice" value="yes">
+    <label for="yes">Yes</label></br>
+
+    <input type="radio" id="no" name="support_choice" value="no">
+    <label for="no">No</label></br>
+  </form>
+
+{% endblock %}
